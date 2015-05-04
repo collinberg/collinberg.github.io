@@ -4,11 +4,16 @@ body{
 hgroup{
 	background: #CCC;
 	font-family: "Helvetica";
+	color: #444;
 	padding: 30px 0;
 }
 hgroup h2{
 	margin-top: 0px;
 
+}
+h1{
+	font-size: 5em;
+	margin-bottom: 10px;
 }
 .container{
 	margin: 0 auto;
