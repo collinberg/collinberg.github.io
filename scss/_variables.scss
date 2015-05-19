@@ -1,0 +1,15 @@
+
+//Mixins
+@mixin button($size){
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: $size;
+	background: #555;
+	color: #EEE;
+	text-decoration: none;	
+
+}
+
+// Colors
+$primary:	#1AD;
+$secondary: complement($primary);
