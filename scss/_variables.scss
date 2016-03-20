@@ -4,12 +4,16 @@
 	border-radius: 5px;
 	padding: 10px 20px;
 	font-size: $size;
-	background: #555;
+	background: $secondary;
 	color: #EEE;
 	text-decoration: none;	
+	text-transform: uppercase;
+	font-weight: 100;
 
 }
 
 // Colors
-$primary:	#1AD;
-$secondary: complement($primary);
+$primary:	#D81159;
+$secondary: #218380;
+$third: 	#8F2D56;
+$complimentary: complement($primary);
