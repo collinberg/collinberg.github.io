@@ -10,14 +10,16 @@ hgroup {
   background: #D81159;
   position: relative;
   color: #EEE;
-  padding: 30px 0;
+  padding: 30px 10px;
+  height: 80vh;
   overflow: hidden; }
   hgroup canvas {
     position: absolute;
     top: 0; }
   hgroup h1 {
-    font-size: 5em;
+    font-size: 3em;
     margin-bottom: 10px;
+    margin-top: 100%;
     text-transform: uppercase; }
   hgroup h2 {
     margin-top: 0px; }
@@ -41,13 +43,6 @@ article {
     color: #218380;
     font-weight: 400; }
 
-.row {
-  display: flex;
-  margin: 0px -10px; }
-  .row .col-6 {
-    flex: 1;
-    padding: 0 10px; }
-
 .comp-color {
   color: #218380; }
 
@@ -68,5 +63,22 @@ article {
   text-transform: uppercase;
   font-weight: 100;
   display: inline-block; }
+
+@media (min-width: 400px) {
+  .row {
+    display: flex;
+    margin: 0px -10px; }
+    .row .col-6 {
+      flex: 1;
+      padding: 0 10px; }
+
+  hgroup {
+    height: auto;
+    padding: 30px 0; }
+    hgroup h1 {
+      font-size: 5em;
+      margin-top: 0px; }
+    hgroup h2 {
+      margin-top: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

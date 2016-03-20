@@ -13,15 +13,17 @@ hgroup{
 	background: $primary;
 	position: relative;
 	color: #EEE;
-	padding: 30px 0;
+	padding: 30px 10px;
+	height: 80vh;
 	overflow: hidden;
 	canvas{
 		position: absolute;
 		top: 0;
 	}
 	h1{
-		font-size: 5em;
+		font-size: 3em;
 		margin-bottom: 10px;
+		margin-top: 100%;
 		text-transform: uppercase;
 	}
 	h2{
@@ -31,6 +33,7 @@ hgroup{
 }
 article{
 	padding: 10px;
+
 	p{
 		font-size: 1.2em;
 		line-height: 1.3em;
@@ -53,14 +56,7 @@ article{
 	}
 
 }
-.row{
-	display: flex;
-	margin: 0px -10px;
-	.col-6{
-		flex: 1;
-		padding: 0 10px;
-	}
-}
+
 .comp-color{	
 	color: $secondary;
 }
@@ -75,5 +71,27 @@ article{
 .btn{
 	@include button(1rem);
 	display: inline-block;
+
+}
+@media (min-width: 400px){
+.row{
+	display: flex;
+	margin: 0px -10px;
+	.col-6{
+		flex: 1;
+		padding: 0 10px;
+	}
+}
+hgroup{
+	height: auto;
+	padding: 30px 0;
+	h1{
+		font-size: 5em;
+		margin-top: 0px;
+	}
+	h2{
+		margin-top: 0px;
+	}
+}
 
 }
